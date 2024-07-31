@@ -19,6 +19,8 @@ const CartCard = ( { imageUrl, name, price,  cartData, setCartData, cartTotal, s
     if( quantity>1 ){
       setQuantity( quantity-1 );
       setCartTotal( cartTotal - price );
+    } else {
+      handleDelete();
     }
   }
 
